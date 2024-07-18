@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Formas</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <SCript src="Logica.js"></SCript>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Formas</h1>
+        <div id="shape-container">
+            <div class="shape" id="circle" onclick="checkShape('circle')"></div>
+            <div class="shape" id="square" onclick="checkShape('square')"></div>
+            <div class="shape" id="triangle" onclick="checkShape('triangle')"></div>
+        </div>
+        <div id="shape-feedback"></div>
+        <a href="Pagina_Principal.html" class="back-button">Volver al Menú</a>
+    </div>
+    <script src="script.js"></script>
+    <audio id="shape-music" loop>
+        <source src="music/shapes.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <script>
+        document.getElementById('shape-music').play();
+    </script>
+</body>
+</html>

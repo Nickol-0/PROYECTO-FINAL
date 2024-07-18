@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Educativo</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <script src="Logica.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>AUTIKIDS</h1>
+        <div class="menu">
+            <div class="child-image">
+                <img src="Inclusión.jpeg" alt="Niño">
+            </div>
+            <div class="menu-buttons">
+                <a href="Pagina_Formas.html" class="menu-item">
+                    <img src="formas.jpg" alt="Formas">
+                    <span>Juego de Formas</span>
+                </a>
+                <a href="Página_Numeros.html" class="menu-item">
+                    <img src="numeros.webp" alt="Números">
+                    <span>Juego de Números</span>
+                </a>
+                <a href="Página_Colores.html" class="menu-item">
+                    <img src="coloress.jpg" alt="Colores">
+                    <span>Juego de Colores</span>
+                </a>
+                <a href="Pagina_Exploracion.html" class="menu-item">
+                    <img src="exploracion.jpg" alt="Exploración">
+                    <span>Exploración</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <audio id="background-music" loop>
+        <source src="music/background.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <script>
+        document.getElementById('background-music').play();
+    </script>
+</body>
+</html>
+

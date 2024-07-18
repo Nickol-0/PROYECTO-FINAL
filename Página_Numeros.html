@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Números</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <SCript src="Logica.js"></SCript>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Números</h1>
+        <div id="number-container"></div>
+        <div id="number-feedback"></div>
+        <a href="Pagina_Principal.html" class="back-button">Volver al Menú</a>
+    </div>
+    <script src="script.js"></script>
+    <audio id="number-music" loop>
+        <source src="music/numbers.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <script>
+        document.getElementById('number-music').play();
+    </script>
+</body>
+</html>
