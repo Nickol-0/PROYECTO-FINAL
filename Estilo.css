@@ -1,16 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Comic Sans MS', cursive, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #f8c7c7;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    width: 140px;
+    height: auto;
+    margin-right: 15px;
+}
+
+header h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Otros estilos existentes */
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 140px;
     color: #333;
 }
 
@@ -20,57 +58,61 @@ h1 {
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
 }
 
 .child-image {
-    position: relative;
-    width: 150px;
-    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
 }
 
 .child-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 .menu-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+    position: relative;
+    width: 75%;
+    height: 75%;
 }
 
 .menu-item {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    margin: 10px;
-    padding: 10px;
+    width: 100px;  /* Ancho del botón */
+    height: 100px; /* Altura del botón */
     background-color: #87CEEB;
     color: white;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 50%;
     text-decoration: none;
     font-size: 16px;
-    position: relative;
+    margin: 10px;
+    transform: translate(-50%, -50%);
 }
 
 .menu-item img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 5px;
 }
 
 .menu-item span {
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .menu-item:hover {
@@ -93,6 +135,32 @@ h1 {
     background-color: #00BFFF;
 }
 
+/* Posicionamiento de los botones en círculo */
+.menu-item:nth-child(1) {
+    top: 45%;
+    left: 10%;
+    transform: translate(-150px, -100px);
+}
+
+.menu-item:nth-child(2) {
+    top: 20%;
+    left: 0%;
+    transform: translate(10px, -150px);
+}
+
+.menu-item:nth-child(3) {
+    top: 10%;
+    left: 30%;
+    transform: translate(150px, -120px);
+}
+
+.menu-item:nth-child(4) {
+    top: 20%;
+    left: 90%;
+    transform: translate(100px, 0px);
+}
+
+/* Resto de estilos */
 .shape, .number, .color, .explore-item {
     margin: 10px;
     cursor: pointer;
