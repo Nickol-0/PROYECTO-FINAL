@@ -6,9 +6,13 @@
     <title>Juego Educativo</title>
     <link rel="stylesheet" href="Estilo.css">
     <script src="Logica.js"></script>
-
 </head>
 <body>
+    <header>
+        <img src="logo u.png" alt="Logo de la Universidad" class="logo">
+        <h2>UNIVERSIDAD NACIONAL DE CHIMBORAZO</h2>
+    </header>
+    
     <div class="container">
         <h1>AUTIKIDS</h1>
         <div class="menu">
@@ -35,11 +39,19 @@
             </div>
         </div>
     </div>
+    
     <audio id="background-music" loop>
-        <source src="music/background.mp3" type="audio/mpeg">
-        Tu navegador no soporta la reproducción de audio.
+        <source src="Musicoterapia.mp3" type="audio/mp3">
     </audio>
     <script>
+        document.getElementById('background-music').play();
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Universidad Nacional de Chimborazo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
         document.getElementById('background-music').play();
     </script>
 </body>
